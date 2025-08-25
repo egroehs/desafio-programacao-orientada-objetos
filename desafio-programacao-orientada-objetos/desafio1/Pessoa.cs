@@ -29,21 +29,21 @@ namespace desafio_programacao_orientada_objetos.desafio1
 
         public void ExibirInformacoes()
         {
-            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}, Profissão: {Profissao}");
+            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}, Profissão: {Profissao} \n");
             Console.WriteLine("Carros: ");
             if (Carros.Count == 0)
             {
-                Console.WriteLine("Nenhum carro cadastrado.");
+                Console.WriteLine("Nenhum carro cadastrado.\n");
             }
             else
             {
                 foreach (var carro in Carros)
                 {
-                    Console.WriteLine($"  {carro.Marca} {carro.Modelo} ({carro.Ano})");
+                    Console.WriteLine($"  {carro.Marca} {carro.Modelo} ({carro.Ano}) \n");
                 }
             }
 
-            Console.ReadLine();
+           
         }
     }
 }

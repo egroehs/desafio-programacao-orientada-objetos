@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using desafio_programacao_orientada_objetos.desafio1;
+using desafio_programacao_orientada_objetos.desafio2;
 
 namespace desafio_programacao_orientada_objetos
 {
@@ -20,6 +21,15 @@ namespace desafio_programacao_orientada_objetos
             pessoa1.AdicionarCarro(carro2);
 
             pessoa1.ExibirInformacoes();
+
+            Retangulo retangulo = new Retangulo(2, 4);
+            retangulo.CalcularArea();
+            retangulo.CalcularPerimetro();
+               
+
+
+            Console.ReadLine();
+
         }
 
     }
