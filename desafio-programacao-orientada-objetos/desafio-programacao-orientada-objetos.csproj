@@ -46,6 +46,8 @@
     <Compile Include="desafio1\Carro.cs" />
     <Compile Include="desafio1\Pessoa.cs" />
     <Compile Include="desafio2\Retangulo.cs" />
+    <Compile Include="desafio3\ContaBancaria.cs" />
+    <Compile Include="desafio3\Movimentacao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

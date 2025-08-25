@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using desafio_programacao_orientada_objetos.desafio1;
 using desafio_programacao_orientada_objetos.desafio2;
+using desafio_programacao_orientada_objetos.desafio3;
 
 namespace desafio_programacao_orientada_objetos
 {
@@ -25,7 +26,21 @@ namespace desafio_programacao_orientada_objetos
             Retangulo retangulo = new Retangulo(2, 4);
             retangulo.CalcularArea();
             retangulo.CalcularPerimetro();
-               
+
+            ContaBancaria conta1 = new ContaBancaria("Eduarda Groehs", 10000, "123");
+            ContaBancaria conta2 = new ContaBancaria("Ana Banana", 1000, "113");
+            ContaBancaria conta3 = new ContaBancaria("Gabriela Silva", 2500, "122");
+
+            conta1.Sacar(500);
+            conta1.Transferir(conta2, 500);
+            conta1.VerExtrato(30);
+            conta2.Depositar(1000);
+            ContaBancaria.AplicarTaxaDeJuros(20);
+            conta3.Sacar(10);
+            conta3.VerExtrato(30);
+            conta3.Transferir(conta1, 3000);
+            ContaBancaria.ConsultarContasNegativadas();
+            ContaBancaria.VerRelatorioDeContas();
 
 
             Console.ReadLine();
